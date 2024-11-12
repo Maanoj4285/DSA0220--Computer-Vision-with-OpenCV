@@ -11,15 +11,15 @@ height, width = image.shape[:2]
 source = np.float32([[1, 1],
                      [1000, 50],
                      [50, 1000]])
-# Define destination points (desired new positions of the points)
+
 destination = np.float32([[10, 10],
                           [200, 50],
                           [50, 200]])
-#  Get the Affine Transformation matrix
+
 matrix = cv2.getAffineTransform(source, destination)
-# Apply the Affine Transformation
+
 transformed_image = cv2.warpAffine(image, matrix, (width, height))
-#  Display the original and transformed images
+
 cv2.imshow("Original Image", image)
 cv2.imshow("Affine Transformed Image", transformed_image)
 cv2.waitKey(0)
