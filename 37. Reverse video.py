@@ -1,5 +1,5 @@
 import cv2
-video_path = "vehicle_video.mp4"
+video_path = "vehicleVideo.mp4"
 cap = cv2.VideoCapture(video_path)
 
 total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
