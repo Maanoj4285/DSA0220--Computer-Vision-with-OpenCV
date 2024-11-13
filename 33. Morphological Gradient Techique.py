@@ -9,7 +9,7 @@ kernel = np.ones((5, 5), np.uint8)
 gradient = cv2.morphologyEx(binary_image, cv2.MORPH_GRADIENT, kernel)
 
 cv2.imshow("Original Image", image)
-cv2.imshow("Morphological Gradient", gradient)
+cv2.imshow("Morphology using Morphological Gradient", gradient)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
