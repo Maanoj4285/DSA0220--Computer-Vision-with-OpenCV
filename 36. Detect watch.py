@@ -13,7 +13,7 @@ for (x, y, w, h) in watches:
 watch_count = len(watches)
 print(f'Number of watches detected: {watch_count}')
 
-cv2.imshow('Watch Detection', image)
+cv2.imshow('Watch Detected', image)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
