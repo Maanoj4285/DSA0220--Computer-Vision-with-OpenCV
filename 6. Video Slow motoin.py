@@ -1,6 +1,5 @@
 import cv2
 
-
 def play_video_with_speed_control(video_path):
     cap = cv2.VideoCapture(video_path)
 
